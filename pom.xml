@@ -199,5 +199,14 @@
 		</configuration>
 		</plugin>
         </plugins>
+       <!--idea下必须加的，否则无法编译java文件下的.xml方法-->
+       <resources>
+           <resource>
+               <directory>src/main/java</directory>
+               <includes>
+                   <include>**/*.xml</include>
+               </includes>
+           </resource>
+       </resources>
  </build> 
 </project>
