@@ -70,4 +70,6 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 			</bean>
 		</mvc:interceptor>
 	</mvc:interceptors> -->
+	<!--解决静态资源加载文件，-->
+	<mvc:default-servlet-handler/>
 </beans>
