@@ -7,6 +7,11 @@
 		<result column="MODIFYDATETIME" property="modifydatetime" jdbcType="TIMESTAMP" />
 		<result column="NAME" property="name" jdbcType="VARCHAR" />
 		<result column="PWD" property="pwd" jdbcType="VARCHAR" />
+		<association property="address" javaType="com.dewell.model.Address">
+			<result column="id" property="id"  />
+			<result column="prince" property="prince" jdbcType="VARCHAR" />
+			<result column="xian" property="xian" jdbcType="VARCHAR" />
+		</association>
 	</resultMap>
 	<sql id="Base_Column_List">
 		ID, CREATEDATETIME, MODIFYDATETIME, NAME, PWD

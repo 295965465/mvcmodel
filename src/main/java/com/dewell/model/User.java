@@ -19,6 +19,15 @@ public class User {
 	private Date createTime;
 
 	private Date updateTime;
+	private Address address;
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 	public String getId() {
 		return id;
